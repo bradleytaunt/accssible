@@ -9,6 +9,10 @@ paginate:            20
 baseurl:             ""
 analytics_id:        UA-132077729-1
 
+# Includes
+include:
+  - _redirects
+
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
