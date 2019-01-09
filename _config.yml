@@ -7,6 +7,7 @@ url:                 https://accssible.com
 tagline:             writing about CSS & design
 paginate:            20
 baseurl:             ""
+analytics_id:        UA-132077729-1
 
 # Assets
 #

@@ -2,6 +2,7 @@
 _gh_pages
 _site
 .sass-cache
+Gemfile.lock
 
 # Numerous always-ignore extensions
 *.diff
