@@ -20,6 +20,10 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
+# Cloudinary
+cloudinary:
+  cloud_name: bradtaunt
+
 # About/contact
 author:
   name:              Bradley Taunt
@@ -35,3 +39,4 @@ github:
 plugins:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-cloudinary

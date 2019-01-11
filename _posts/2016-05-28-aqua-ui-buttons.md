@@ -6,7 +6,7 @@ title: Aqua UI CSS buttons
 Though it may feel like nostalgia, the old OS design for Mac was arguably better than the current iteration (as of this writing - High Sierra). I recently designed a quick Dribbble shot showcasing how the older operating system used to have so much more character and depth.
 
 <figure>
-    <img src="https://bradleytaunt.com/static/images/aqua-ui-css-buttons.png" alt="Old macOS Buttons">
+    {% cloudinary /public/images/aqua-ui-css-buttons.png alt="Old macOS Buttons" %}
     <span class="marginnote">My initial Dribbble shot, which can be found <a href="https://dribbble.com/shots/4561658-Aqua-Buttons-UI">here</a>.</span>
 </figure>
 
