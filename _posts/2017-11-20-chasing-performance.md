@@ -3,6 +3,12 @@ layout: post
 title: Chasing performance
 ---
 
+<div class="message">
+### Update
+
+This post is no longer relevant since this blog has been redesigned since. I'm keeping this article up as a point of reference.
+</div>
+
 So I decided to participate in Smashing Mag's <a href="https://www.smashingmagazine.com/2017/10/front-end-performance-challenge/">Front End Performance Challenge</a>, not only for the potential of winning the prize but to further experiment with optimizing my site. (Web performance is a passion of mine)
 
 Below I will breakdown the before &amp; after statistics of my personal site and what changes I made in great detail.

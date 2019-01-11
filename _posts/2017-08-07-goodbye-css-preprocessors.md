@@ -7,12 +7,7 @@ I've been using preprocessors across all my side projects since they first poppe
 
 But that all changes moving forward. I'm going back to basics with CSS. Straight vanilla, man.
 
-<figure>
-    <picture>
-        <img src="https://bradleytaunt.com/static/images/articles/sass-cancel_rl1fsw_c_scale,w_800.jpg"
-        alt="Sass">
-    </picture>
-</figure>
+{% cloudinary /public/images/sass-cancel_rl1fsw_c_scale,w_800.jpg alt="No Sass" %}
 
 ## Why? And who cares?
 
@@ -47,7 +42,7 @@ Basic example:
 
 ```css
 selector, selectTwo, .css-class {
-    /// shared styling ///
+    /* shared styling */
 }
 ```
 

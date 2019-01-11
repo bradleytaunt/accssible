@@ -50,9 +50,14 @@ a {
 img {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   display: block;
+  height: 100%;
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
+}
+
+.cp_embed_wrapper {
+  margin: 1rem 0;
 }
 
 figure {

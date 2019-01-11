@@ -5,12 +5,7 @@ title: Unsolicited design review - Dropbox
 
 Earlier last week the design team at Dropbox unveiled their new branding / design system for the company as a whole. If you haven't seen the updated design yet, you can do so here: <a href="https://dropbox.design/">dropbox.design</a> (Take your time, I can wait).
 
-<figure>
-    <picture>
-        <img src="https://bradleytaunt.com/static/images/articles/dropbox-logo_djnecj_c_scale,w_1400.jpg"
-        alt="Dropbox">
-    </picture>
-</figure>
+{% cloudinary /public/images/dropbox-logo_djnecj_c_scale,w_1400.jpg alt="Dropbox" %}
 
 I won't mince words when I say I believe this is a huge step backwards for their brand. Not only is it uninspired and broken, but it also shows how our industry is plagued with a need to redesign things just for the sake of redesigning them.
 
@@ -89,10 +84,7 @@ Any persons with visual impairments need not apply. This design system is not bu
 </blockquote>
 
 <figure>
-    <picture>
-        <img src="https://bradleytaunt.com/static/images/articles/dropbox-fonts_vthivw_c_scale,w_1122.jpg"
-        alt="Dropbox Fonts">
-    </picture>
+    {% cloudinary /public/images/dropbox-fonts_vthivw_c_scale,w_1122.jpg alt="Dropbox Fonts" %}
     <span class="marginnote">Not a single one of these typeface styles is initially readable</span>
 </figure>
 
@@ -105,20 +97,14 @@ The typeface they have chosen looks terrible at any view-port size and readabili
 Irony at it's finest. "Our users tell us that they hate being distracted and overwhelmed, so we've decided to use headache inducing color palettes, crude illustrations, a barely legible typeface, and some of the most visually loud photography throughout our system". I hate coming off as mean-spirited - but this is some elaborate joke, right?
 
 <figure>
-    <picture>
-        <img src="https://bradleytaunt.com/static/images/articles/dropbox-logos-color_fcogaj_c_scale,w_1400.jpg"
-        alt="Dropbox Color Logos">
-    </picture>
+    {% cloudinary /public/images/dropbox-logos-color_fcogaj_c_scale,w_1400.jpg alt="Dropbox Color Logos" %}
     <span class="marginnote">Oh Dropbox...my eyes!</span>
 </figure>
 
 After running it through a color contrast accessibility checker:
 
 <figure>
-    <picture>
-        <img src="https://bradleytaunt.com/static/images/articles/dropbox-contrast_plkfxb_c_scale,w_1400.jpg"
-        alt="Dropbox Contrast">
-    </picture>
+    {% cloudinary /public/images/dropbox-contrast_plkfxb_c_scale,w_1400.jpg alt="Dropbox Contrast" %}
     <span class="marginnote">Multiple accessibility failures</span>
 </figure>
 
@@ -127,10 +113,7 @@ Next we have the child-like 'scribble' illustrations. Now don't get me wrong, I 
 Another issue with these illustrations is their usage. Look at the image below and ask yourself if you would correlate it with an error page if no accompanying text was present.
 
 <figure>
-    <picture>
-        <img src="https://bradleytaunt.com/static/images/articles/dropbox-404_bovayg_c_scale,w_758.jpg"
-        alt="Dropbox Error Illustration">
-    </picture>
+    {% cloudinary /public/images/dropbox-404_bovayg_c_scale,w_758.jpg alt="Dropbox Error Illustration" %}
     <span class="marginnote">What does this have to do with a 404 error page?</span>
 </figure>
 
