@@ -9,6 +9,9 @@
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
 
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
