@@ -219,7 +219,7 @@ Next, we will hide the default `radio` input and design our labels to resemble a
 }
 ```
 
-The main inner content of each tab needs to have an `absolute` position set as it's default, since the one currently selected will switch to `relative` (more on that in a moment):
+The main inner content of each tab needs to have an `absolute` position set as it's default, since the one currently selected will switch to `relative` on mobile (more on that in a moment):
 
 ```css
 /* The inner tab content */
