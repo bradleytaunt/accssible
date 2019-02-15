@@ -3,11 +3,16 @@
 // Headings, body text, lists, and other misc typographic elements.
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
   margin-bottom: .5rem;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
+}
+
+h1,h2 {
+  color: $red;
 }
 
 h1 {
@@ -15,7 +20,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
 }
 

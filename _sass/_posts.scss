@@ -3,6 +3,12 @@
 // Each post is wrapped in `.post` and is used on default and post layouts. Each
 // page is wrapped in `.page` and is only used on the page layout.
 
+.posts {
+  h3 {
+    color: $red;
+  }
+}
+
 .page,
 .post {
   li + li {
@@ -64,14 +70,6 @@
     small {
       font-size: 75%;
       color: #999;
-    }
-
-    a:hover {
-      color: #268bd2;
-
-      small {
-        color: inherit;
-      }
     }
   }
 }
