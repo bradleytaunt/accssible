@@ -95,6 +95,16 @@ description: Implement animated card tiles with pure CSS
         opacity: 1;
         z-index: 1;
     }
+
+    @media(max-width: 600px) {
+        .card-tiles-container {
+            flex-direction: column;
+        }
+        .card-tile {
+            margin: 0 0 10px 0;
+            width: 100%;
+        }
+    }
 </style>
 
 The design trend of using "cards" or "tiles" to display interactive sections/article headings in an app or website remains a popular choice among designers. So, let's build a set of animated cards with only HTML &amp; CSS. 
@@ -229,6 +239,22 @@ Finally we add some minor styling for the inner header and paragraph tags:
     color: #fff;
     margin: 0;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+```
+
+### Don't forget mobile
+
+We want out UI to stack the cards if users are viewing them on smaller devices:
+
+```css
+@media(max-width: 600px) {
+    .card-tiles-container {
+        flex-direction: column;
+    }
+    .card-tile {
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
 }
 ```
 
@@ -448,6 +474,16 @@ To make things easier for reference, I have included all the `html` and `css` be
 .card-tile:hover .text-content {
     opacity: 1;
     z-index: 1;
+}
+
+@media(max-width: 600px) {
+    .card-tiles-container {
+        flex-direction: column;
+    }
+    .card-tile {
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
 }
 ```
 
