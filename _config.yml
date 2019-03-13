@@ -40,3 +40,9 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-cloudinary
+  - disqus-for-jekyll
+
+# Disqus
+disqus:
+  name: "accssible" # required
+  noscript: "Please activate JavaScript if you wish to comment." # optional
