@@ -1,6 +1,12 @@
 ---
 layout: post
 title: Using parent selectors in CSS
+description: Learn how to call on parent selectors in CSS
+summary: Find out how to target an element's parent directly in CSS by using two simple JavaScript packages.
+tags:
+    - css
+    - javascript
+    - development
 ---
 
 I recently saw a Twitter thread posted by <a href="https://twitter.com/innovati/status/1068998114491678720">Tommy Hodgins</a> on implementing highly requested styling features in CSS with only a minimal amount of JavaScript. Many of his examples are great, but the `parent` selector instantly peaked my interest.

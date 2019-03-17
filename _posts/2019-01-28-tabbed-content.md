@@ -2,6 +2,10 @@
 layout: post
 title: Tabbed content without JavaScript
 description: Quick demo on how build tabular content sections with only CSS
+summary: Learn how to implement tabbed navigation content without the need to use plugins or any kind of JavaScript.
+tags:
+    - css
+    - javascript
 ---
 
 <style>

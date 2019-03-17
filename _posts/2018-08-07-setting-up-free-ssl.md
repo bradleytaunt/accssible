@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Setting up a free SSL
+description: Tutorial on how to easily setup a free SSL certificate
+summary: All websites should be using SSL and there is no excuse not to have it setup. Let me show you how to easily add a free SSL certificate to any project.
+tags:
+    - development
 ---
 
 I never had to worry about SSL certificates when I originally hosted my blog through Github Pages, but since switching over to Surge.sh I lost my ability to utilize `https` protocol.

@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Designers need thicker skin
+description: Designers are too soft and weak when it comes to receiving criticism
+summary: Our design industry needs to stop being so fragile and weak when it comes to critical analysis of our work. Stop getting triggered over critics.
+tags:
+    - design
+    - development
 ---
 
 I'm not normally one to comment or even really care about "drama" within our design industry. Opinions are just that and should just be consumed at face value. But this week I was moderately annoyed with a subset of designers in design-land.

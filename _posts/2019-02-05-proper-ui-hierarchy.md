@@ -2,6 +2,11 @@
 layout: post
 title: Proper UI hierarchy
 description: The importance of designing for user accessibility and UI hierarchy
+summary: Current industry trends such as flat or material design have placed accessibility and visual hierarchy as secondary requirements. Hopefully we can start to fix that.
+tags:
+    - css
+    - interface
+    - design
 ---
 
 <style>

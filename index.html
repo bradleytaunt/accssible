@@ -5,17 +5,20 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
-    {% assign currentdate = post.date | date: "%Y" %}
-    {% if currentdate != date %}
-      <h3 id="y{{currentdate}}">{{ currentdate }}</h3>
-      {% assign date = currentdate %} 
-    {% endif %}
-    <article class="post">
+    <article class="post" role="article">
       <div class="post-title">
-        <a href="{{ site.baseurl }}{{ post.url }}">
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
-        </a>
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date no-margin">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </a></h2>
+        <span class="post-date">Posted on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></span>
+        <p>{{ post.summary }}</p>
+        <hr>
+        <p>
+          Tagged
+          {% for tag in post.tags %}
+            <a href="/tags/{{ tag }}/">{{ tag }}</a>
+          {% endfor %}
+        </p>
       </div>
     </article>
   {% endfor %}

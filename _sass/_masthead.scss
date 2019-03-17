@@ -2,19 +2,84 @@
 //
 // Super small header above the content for site name and short description.
 
+.masthead-container {
+  border-bottom: 5px solid $brand-color;
+  width: 100%;
+}
+
 .masthead {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-top:    1rem;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 1rem 2rem;
+
+  @media(max-width: $medium-breakpoint) {
+    flex-wrap: wrap;
+  }
 }
 
 nav {
   a {
     color: $body-color;
+    margin-left: 1rem;
+
+    &.skip-content {
+      background: $gray-4;
+      color: white;
+      left: -9999px;
+      padding: 0.5rem;
+      position: absolute;
+      top: 0;
+
+      &:focus {
+        left: 1rem;
+      }
+    }
   }
+  @media(max-width: $medium-breakpoint) {
+    display: none;
+    margin-top: 1rem;
+    width: 100%;
+
+    a {
+      border: 1px solid $gray-2;
+      display: block;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      text-decoration: none;
+      width: 100%;
+    }
+  }
+}
+
+// Menu Toggle - Mobile
+.menu-toggle {
+  border: 1px solid $gray-2;
+  cursor: pointer;
+  display: none;
+  padding: 0.5rem 1.8rem 0.5rem 0.8rem;
+  position: relative;
+
+  &:after {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAYCAYAAACIhL/AAAAAAXNSR0IArs4c6QAAAWBJREFUSA3Nl00OgjAQRmnDeQhwBjcu3HIIXXgZ8SpuvAJh7yW8AAnO1zTElkHaWn6a1DJ22nk2fSGKpmluSZJcqO+x1aLv+7Rt2weNhz0RCiGeRVEcJT10aZpWNL72AggWzdRJQGVZ9pZSnmjivTUkGMACJrAoQDzkeY4TrKh3iDdqqF1pFoUwACIqy/JJ9Fc1s8EHaoPhu7QBiAm6mHca6u+klZ5rXdsoJ4xIB2ubTfdOGUvj6HqNThCMSFzLbKo1GMsdFguIxDXMJjjDWC9AJC9s9shYb0AsWMpsztggQCzSdsHuWO3OGcttzlrMJcYym+7dpLFc3UlJ7OQYZs8Za9dE7AyI5H/MdjEWNezmBYjFgWY7GWvDIfYGxCJfs12Nxd52CwLEJh5mOxtrwyF2tphbPGe2r7FcjeATVL/uxzs7xNjogNiQMzvU2EUAsalldrCxHGDU7+jf4Rk95qYfkiGLtr7wLgYAAAAASUVORK5CYII=') no-repeat center;
+    background-size: 10px;
+    content: '';
+    height: 10px;
+    padding-left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 10px;
+  }
+
+  @media(max-width: $medium-breakpoint) {
+    display: block;
+  }
+}
+input#menu-toggle/*input*/ { display: none; }
+input#menu-toggle:checked ~ nav {
+  display: block !important;
 }
 
 .masthead-title {
@@ -23,19 +88,9 @@ nav {
   color: $gray-4;
   position: relative;
 
-  &:before {
-    background: url('/public/writing-logo.png') no-repeat center;
-    background-size: cover;
-    content:'';
-    height: 25px;
-    pointer-events: none;
-    position: absolute;
-    width: 25px;
-  }
-
   a {
     color: inherit;
-    padding-left: 30px;
+    text-decoration: none;
   }
 
   small {

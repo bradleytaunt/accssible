@@ -2,6 +2,11 @@
 layout: post
 title: Easy toggle switches
 description: Designing toggle switches with pure CSS
+summary: Using only CSS, we can create beautiful toggle switches in place of the default browser radio or checkbox inputs.
+tags:
+    - html
+    - css
+    - design
 ---
 
 <style>

@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Open source typeface pairings
+description: A few examples of excellent open source typeface pairings
+summary: Using premium fonts in your projects is wonderful, but can sometimes fall outside your budget. Here are a few of my personal favorite open source typefaces.
+tags:
+    - design
 ---
 
 I always love finding new typeface pairings to use across my personal and client projects, but I find many suggested pairings come with a hefty price tag (rightly so - premium typefaces are normally always worth their cost).

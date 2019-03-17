@@ -2,10 +2,10 @@
 permalink:           pretty
 
 # Setup
-title:               'accssible'
+title:               'Accssible'
 url:                 https://accssible.com
 tagline:             writing about CSS & design
-paginate:            20
+paginate:            10
 baseurl:             ""
 analytics_id:        UA-132077729-1
 

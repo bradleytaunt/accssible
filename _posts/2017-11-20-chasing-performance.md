@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Chasing performance
+description: A detailed explanation of how I boosted my website's overall performance
+summary: A detailed explanation of how I improved my personal blog's overall performance, while also increasing the average time to paint.
+tags:
+    - development
+    - performance
 ---
 
 <div class="message">

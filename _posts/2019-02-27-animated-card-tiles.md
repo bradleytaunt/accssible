@@ -2,6 +2,11 @@
 layout: post
 title: Animated card tiles
 description: Implement animated card tiles with pure CSS
+summary: In this tutorial we explain step-by-step how to build out tiled cards that animate with user interaction using pure CSS.
+tags:
+    - html
+    - css
+    - design
 ---
 
 <style>

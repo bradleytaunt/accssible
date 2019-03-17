@@ -2,6 +2,11 @@
 layout: post
 title: Super Mario blocks in CSS
 description: Recreating the Super Mario World punch blocks in pure CSS
+summary: Ever wanted to recreate the Super Mario blocks in CSS? Of course you have! In this tutorial we will breakdown how to do just that, step-by-step.
+tags:
+    - html
+    - css
+    - design
 ---
 
 <style>

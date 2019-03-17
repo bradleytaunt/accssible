@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Adaptable flexbox grid
+description: Learn how to create a very simple grid with flexbox
+summary: The days of overly complex grid systems are gone. Learn how to create adaptable grid systems with flexbox using barely any CSS.
+tags:
+    - css
+    - design
 ---
 
 You can use `flexbox` for many tricky layout "hacks" and implementing a grid layout is no different.

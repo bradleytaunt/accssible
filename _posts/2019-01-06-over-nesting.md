@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Over-nesting
+description: Explaining why it is best to avoid over-nesting CSS properties
+summary: Preprocessors like Sass and Less have made development much easier, but you should always be careful not to go overboard with CSS nesting.
+tags:
+    - css
+    - development
 ---
 
 I think since our design industry moves so quickly and exciting new technologies get released almost daily, that we often forget some of the basics when writing CSS. I bring this up because I've recently worked on a few projects that show a slight disregard for proper class/selector nesting.

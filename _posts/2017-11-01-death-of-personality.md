@@ -1,6 +1,11 @@
 ---
 layout: post
 title: The death of personality
+description: Discussing the loss of original product design in the industry
+summary: Original design in our industry has greatly declined since the introduction of "flat design". We as designers and developers need better standards going forward.
+tags:
+    - design
+    - development
 ---
 
 On September 18, 2013 truly original product design (everything from icon and app design to UI and experience interactions) began it's fast decline into the abyss with the release of Apple's iOS 7 update. It was called *revolutionary*. It was seen as a 'new age' of design. I think it was a big mistake.

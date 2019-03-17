@@ -1,6 +1,12 @@
 ---
 layout: post
 title: Pure CSS simple dropdown plugin
+description: Learn how to implement a custom select dropdown with CSS
+summary: A simple, JavaScript-free way to implement a custom styled, plug-and-play select dropdown with pure CSS.
+tags:
+    - html
+    - css
+    - design
 ---
 I find myself blowing away default browser `select` styling and implementing my own custom dropdowns far more often than I'd like. So, I recently created a very simple and clean component using just pure CSS.
 

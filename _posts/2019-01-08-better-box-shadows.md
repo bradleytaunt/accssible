@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Better box-shadows
+description: Creating better box-shadows with simple CSS and pseudo elements
+summary: Further improving on the default browser box-shadow styling with a little help from well-placed pseudo elements.
+tags:
+  - css
+  - design
 ---
 
 <style>

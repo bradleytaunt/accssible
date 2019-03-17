@@ -24,10 +24,10 @@
 
 // Only provide a hover state for linked pagination items
 a.pagination-item:hover {
-  background-color: #f5f5f5;
+  background-color: $brand-color;
 }
 
-@media (min-width: 30em) {
+@media (min-width: $large-breakpoint) {
   .pagination {
     margin: 3rem 0;
   }

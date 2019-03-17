@@ -2,6 +2,11 @@
 layout: post
 title: Easy custom radio inputs
 description: Quick demo on how to create custom radio buttons with ease
+summary: Let's face it - the default browser styling for radio inputs is terrible. In this article we breakdown how to create beautiful radio options with just CSS.
+tags:
+    - html
+    - css
+    - design
 ---
 
 <style>

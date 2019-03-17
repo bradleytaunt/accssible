@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Stay hungry
+description: Staying passionate can help fuel your ambition
+summary: As designers and developers, we need to keep pursuing what interests us about our industry. Staying passionate can help fuel your ambition.
+tags:
+    - development
 ---
 
 It can feel daunting in this developer / designer landscape to keep yourself up-to-date with the latest and greatest technologies available. Which new framework should I invest the most time into? Will it even be maintained a couple years down the road? Is it just a fad?

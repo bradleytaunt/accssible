@@ -2,6 +2,10 @@
 layout: post
 title: Prescription form UI improvements
 description: Improve a prescription form with proper UI concepts
+summary: Breaking down the process on redesigning a web form for prescription glasses from a purely visual UI perspective.
+tags: 
+    - interface
+    - design
 ---
 
 <div class="message">
@@ -9,7 +13,7 @@ description: Improve a prescription form with proper UI concepts
     I've decided to do something different with this post - instead of creating a refreshed design with HTML &amp; CSS, I'm just going to breakdown how to improve this design from a purely UI perspective. If you happen to enjoy this type of blog post - please be sure to let me know!
 </div>
 
-I was browsing the <a href="https://www.clearly.ca">Cleary</a> website a few days ago and ended up using their prescription form to update my worsening eyesight. The design of this form wasn't *bad* per se, but it could certainly be improved.
+I was browsing the <a href="https://www.clearly.ca">Clearly</a> website a few days ago and ended up using their prescription form to update my worsening eyesight. The design of this form wasn't *bad* per se, but it could certainly be improved.
 
 ## Current design of the prescription view
 {% cloudinary /public/images/prescription-ui.png alt="Default prescription UI" %}

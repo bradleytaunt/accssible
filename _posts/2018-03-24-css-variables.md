@@ -1,6 +1,11 @@
 ---
 layout: post
 title: CSS variables
+description: How to properly use variables in vanilla CSS
+summary: CSS preprocessors have allowed developers to use variables for quite some time, but we now have the ability to use these properties in plain vanilla CSS.
+tags:
+    - css
+    - development
 ---
 
 The CSS language is becoming even more awesome and powerful everyday. In this quick article I'd like to focus specifically on the "new" CSS variable function that you can start using in your projects *right now*.

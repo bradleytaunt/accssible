@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Width or flex-basis?
+description: Comparing width and flex-basis for CSS layouts
+summary: Is it better to use width or flex-basis for layouts in CSS? Let's breakdown the most common use cases for each and how to implement them.
+tags:
+    - css
+    - design
 ---
 
 Creating rows and columns of elements that adapt dynamically can be a little tricky depending on the desired outcome. Let's breakdown how to solve this issue using both `inline-block` paired with `width` and `flex-basis`.

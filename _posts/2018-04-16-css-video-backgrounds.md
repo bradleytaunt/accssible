@@ -1,6 +1,11 @@
 ---
 layout: post
 title: CSS video backgrounds
+description: Learn how to add video files as background images in Safari
+summary: Safari is actually ahead of the game for once, allowing developers to set video files as background property attributes in CSS.
+tags:
+    - css
+    - html
 ---
 
 With the release of Safari 11.1 on macOS and Safari on iOS 11.3, developers now have the ability to support background videos (mp4 support only - at the time of this article) with pure CSS.

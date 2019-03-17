@@ -1,6 +1,11 @@
 ---
 layout: post
 title: The wonders of text ellipsis
+description: Learn how to use text ellipsis effectively in your projects
+summary: The text ellipsis CSS property can be extremely useful for keeping your content contained without the use of ugly fixed widths or heights.
+tags:
+    - css
+    - design
 ---
 
 A common issue when working with constrained UI elements is text overflowing outside of it's parent or breaking into addition lines (thus breaking the layout).

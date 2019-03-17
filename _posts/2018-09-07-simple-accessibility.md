@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Simple accessibility
+description: A few simple and easy to implement wins for accessibility in your projects
+summary: Breaking down a few accessibility improvements that you can easily implement into all your current and future web projects.
+tags:
+    - development
+    - accessibility
 ---
 Implementing proper accessibility practices can seem a little daunting at first, but there are a few basic standards you can introduce into your project work-flow that are fairly straightforward:
 

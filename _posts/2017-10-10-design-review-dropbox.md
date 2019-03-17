@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Unsolicited design review - Dropbox
+description: A review of the awful Dropbox redesign
+summary: A personal review and critique of the "new" Dropbox product and brand redesign. I'm not sure what the hell they were thinking on this one.
+tags:
+    - design
+    - development
 ---
 
 Earlier last week the design team at Dropbox unveiled their new branding / design system for the company as a whole. If you haven't seen the updated design yet, you can do so here: <a href="https://dropbox.design/">dropbox.design</a> (Take your time, I can wait).

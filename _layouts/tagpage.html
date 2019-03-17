@@ -1,0 +1,24 @@
+---
+layout: tags
+---
+
+<h1 style="margin: 0 0 3rem;">Tagged in: {{page.tag | capitalize}}</h1>
+
+{% for post in site.tags[page.tag] %}
+    <article class="post">
+        <div class="post-title">
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+        </a></h2>
+        <span class="post-date">Posted on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></span>
+        <p>{{ post.summary }}</p>
+        <hr>
+        <p>
+            Tagged
+            {% for tag in post.tags %}
+            <a href="/tags/{{ tag }}/">{{ tag }}</a>
+            {% endfor %}
+        </p>
+        </div>
+    </article>
+{% endfor %}

@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Goodbye CSS preprocessors
+description: Moving away from CSS preprocessors when working on new projects
+summary: Moving away from being so dependent on CSS preprocessors might just help you improve your skillset as a developer. Working with vanilla CSS can be great.
+tags:
+    - css
+    - development
 ---
 
 I've been using preprocessors across all my side projects since they first popped onto the scene. Sass, Stylus, LESS — you name the CSS preprocessor and I've most likely used it because CSS preprocessors are awesome.

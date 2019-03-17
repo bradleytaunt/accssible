@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Using multiple CSS background images
+description: Set multiple background images on an element in CSS
+summary: Somewhat unknown in the CSS community is the ability to have multiple background images set on an element.
+tags:
+    - css
+    - design
 ---
 
 It isn't something developers have a need to do very often, but you *can* set multiple background images on a single element.

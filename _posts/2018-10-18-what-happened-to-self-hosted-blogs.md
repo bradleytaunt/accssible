@@ -1,6 +1,11 @@
 ---
 layout: post
 title: What happened to self-hosted blogs?
+description: Talking about the current lack of original and self-hosted blogs
+summary: Platforms like Medium have made most original self-hosted blogs a thing of the past. Personally, I think this is terrible for the blogging community as a whole.
+tags:
+    - design
+    - development
 ---
 
 I remember a time on the internet<sup>1</sup> when everyone and their grandmother was running a personal blog. And I mean *personal* - not hosted on some side platform or a tacked-on addition to the rest of their website.

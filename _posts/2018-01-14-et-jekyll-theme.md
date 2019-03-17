@@ -1,6 +1,12 @@
 ---
 layout: post
 title: ET-Jekyll theme
+description: A custom jekyll theme based off the work of Edward Tufte
+summary: Inspired by the book and handout designs of Edward Tufte, I created an open source Jekyll theme to based off of Dave Liepmann's Tufte CSS.
+tags:
+    - html
+    - css
+    - design
 ---
 
 ET-Jekyll theme is based off of <a href="http://www.daveliepmann.com">Dave Liepmann's</a> awesome <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> - which takes it's style and inspiration from the wonderful book and handout designs of <a href="https://www.edwardtufte.com/tufte/">Edward Tufte</a>.

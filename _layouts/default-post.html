@@ -22,8 +22,19 @@
       </main>
 
       <aside role="complementary">
-        <h2>About This Site</h2>
-        <p>This is the personal blog of designer and developer <a href="https://bradleytaunt.com">Bradley Taunt</a>. In this small corner of the internet I write about design, CSS, accessibility and web performance.</p>
+        {% if site.related_posts != empty %}
+            <h2>Recent Posts</h2>
+            <ul class="related-posts">
+            {% for post in site.related_posts limit:3 %}
+                <li>
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {{ post.title }}
+                </a>
+                <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
         <hr>
         <h2>Open Source Stuff</h2>
         <ul>

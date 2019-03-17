@@ -2,6 +2,10 @@
 layout: post
 title: Basic gulp build for Sass
 description: A basic starting point for compiling Sass with Gulp
+summary: My own personal gulp starter file used for most of my projects when compiling and processing Sass.
+tags:
+  - development
+  - css
 ---
 
 Some designers might shy away from build tools when first starting out and I can understand the reasoning - task runners like `gulp` and `grunt` can seem daunting at first. So, I've decided to showcase my go-to setup for `gulp` and explain what the heck it does step-by-step. 

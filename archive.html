@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Archive"
+permalink: /archive
+---
+
+<div class="posts">
+{% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+    <h2 class="no-margin" id="y{{currentdate}}">{{ currentdate }}</h2>
+    <hr>
+    {% assign date = currentdate %} 
+    {% endif %}
+    <div class="archive-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+        </a>
+        <time class="archive-time" datetime="{{ post.date | date_to_xmlschema }}" class="post-date no-margin">{{ post.date | date: "%B %-d, %Y" }}</time>
+    </div>
+{% endfor %}
+</div>
