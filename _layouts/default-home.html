@@ -14,19 +14,8 @@
       </main>
 
       <aside role="complementary">
-        {% if site.related_posts != empty %}
-            <h2>Recent Posts</h2>
-            <ul class="related-posts">
-            {% for post in site.related_posts limit:3 %}
-                <li>
-                <a href="{{ site.baseurl }}{{ post.url }}">
-                    {{ post.title }}
-                </a>
-                <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-                </li>
-            {% endfor %}
-            </ul>
-        {% endif %}
+        <h2>About This Site</h2>
+        <p>I'm <a href="https://bradleytaunt.com">Bradley Taunt</a>, a designer / developer hybrid and this is my personal blog. In this small corner of the internet I write about design, CSS, best accessibility practices, and web performance.</p>
         <hr>
         <h2>Open Source Stuff</h2>
         <ul>
@@ -67,6 +56,33 @@
       </aside>
 
     </div>
+
+    <!-- pagination -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination"> 
+    {% if paginator.previous_page %}
+        <a class="pagination-item older" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+        <span class="pagination-item older">&laquo; Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <span class="page-number">{{ page }}</span>
+        {% elsif page == 1 %}
+        <a class="page-number" href="/">{{ page }}</a>
+        {% else %}
+        <a class="page-number" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+        <a class="pagination-item newer" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+        <span class="pagination-item older">Next &raquo;</span>
+    {% endif %}
+    </div>
+    {% endif %}
 
     {% include footer.html %}
 

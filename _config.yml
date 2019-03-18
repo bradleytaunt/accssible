@@ -5,7 +5,8 @@ permalink:           pretty
 title:               'Accssible'
 url:                 https://accssible.com
 tagline:             writing about CSS & design
-paginate:            10
+paginate:            6
+paginate_path:       "/page:num/"
 baseurl:             ""
 analytics_id:        UA-132077729-1
 
