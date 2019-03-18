@@ -13,6 +13,10 @@
   overflow: hidden; // clearfix
   text-align: center;
   width: 100%;
+
+  @media(max-width: $large-breakpoint) {
+    flex-wrap: wrap;
+  }
 }
 
 // Pagination items can be `span`s or `a`s
@@ -24,7 +28,6 @@
 
   &:first-child {
     border-radius: 5px 0 0 5px;
-    margin-bottom: -1px;
   }
 
   &:last-child {
@@ -60,9 +63,5 @@ a.page-number {
 
   .pagination-item {
     border-width: 1px;
-
-    &:first-child {
-      margin-bottom: 0;
-    }
   }
 }
