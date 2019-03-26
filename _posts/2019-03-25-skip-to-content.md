@@ -48,7 +48,7 @@ Now for the easy part - adding our simple content skip link with it's own custom
 
 ## The CSS
 
-Our first task is to make sure this new link isn't visible or interactive by default unless the user explicitly tabs through the navigation. We do so my positioning the link outside of the main content view. It is important to use this `absolute` position style instead of setting the display property to `none`, since the display property technique will fully remove the element from the DOM (bad accessibility practices).
+Our first task is to make sure this new link isn't visible or interactive by default unless the user explicitly tabs through the navigation. We do so by positioning the link outside of the main content view. It is important to use this `absolute` position style instead of setting the display property to `none`, since the display property technique will fully remove the element from the DOM (bad accessibility practices).
 
 ```css
 a.skip-content {
