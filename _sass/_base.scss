@@ -101,21 +101,10 @@ tbody tr:nth-child(odd) th {
 figcaption,
 .marginnote {
   color: #7a7a7a;
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 70%;
-  position: absolute;
-  top: 0;
-  right: -12rem;
-  width: 11rem;
+  display: inline-block;
+  font-size: 80%;
+  position: relative;
   margin-top: 0;
-}
-
-@media(max-width: 1200px) {
-  figcaption,
-  .marginnote {
-    font-size: 80%;
-    position: relative;
-    right: auto;
-    width: auto;
-  }
+  text-align: center;
+  width: 100%;
 }
