@@ -114,5 +114,9 @@ input#menu-toggle:checked ~ nav {
     font-size: 75%;
     font-weight: 400;
     opacity: .6;
+
+    @media(max-width: $medium-breakpoint) {
+      display: none;
+    }
   }
 }
