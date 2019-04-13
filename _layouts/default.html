@@ -13,47 +13,42 @@
         {{ content }}
       </main>
 
+      <!-- pagination -->
+      {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+      {% if paginator.previous_page %}
+          <a class="pagination-item older" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% else %}
+          <span class="pagination-item older">&laquo; Prev</span>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+          <span class="page-number">{{ page }}</span>
+          {% elsif page == 1 %}
+          <a class="page-number" href="/">{{ page }}</a>
+          {% else %}
+          <a class="page-number" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+          <a class="pagination-item newer" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% else %}
+          <span class="pagination-item older">Next &raquo;</span>
+      {% endif %}
+      </div>
+      {% endif %}
+
       <aside role="complementary">
-        <h2>About This Site</h2>
-        <p>I'm <a href="https://bradleytaunt.com">Bradley Taunt</a>, a designer / developer hybrid and this is my technical blog. In this small corner of the internet I write about design, CSS, best accessibility practices, and web performance.</p>
-        <hr>
-        <h2>Open Source Stuff</h2>
-        <ul>
-          <li>
-            <a href="https://normform.netlify.com/">Normform</a>
-            <span>A simple CSS plugin that removes the headache of dealing with default browser form designs.</span>
-          </li>
-          <li>
-            <a href="https://vanillacss.com/">Vanilla CSS</a>
-            <span>A minimal baseline stylesheet for any web project. It includes a basic reset and default styling for all HTML5 elements.</span>
-          </li>
-          <li>
-            <a href="https://et-jekyll.netlify.com/">ET-Jekyll</a>
-            <span>A Jekyll theme based off of Tufte CSS, taking it's style and inspiration from the wonderful book and handout designs of Edward Tufte.</span>
-          </li>
-        </ul>
-        <span><a href="https://github.com/bradleytaunt">See all open source projects...</a></span>
-        <hr>
-        <h2>Contact</h2>
-        <ul>
-          <li>
-            <a href="https://github.com/bradleytaunt">Github</a>
-            <span>My growing collection of open source projects.</span>
-          </li>
-          <li>
-            <a href="https://dribbble.com/hustlepizza">Dribbble</a>
-            <span>Home of design experiments and UI work.</span>
-          </li>
-          <li>
-            <a href="https://twitter.com/bradtaunt">Twitter</a>
-            <span>Sparse ramblings about design and development.</span>
-          </li>
-        </ul>
+        <section role="region">
+          <h2>About This Site</h2>
+          <p>I'm <a href="https://bradleytaunt.com">Bradley Taunt</a>, a designer / developer hybrid and this is my technical blog. In this small corner of the internet I write about design, CSS, best accessibility practices, and web performance.</p>
+        </section>
+        {% include footer.html %}
       </aside>
 
     </div>
-
-    {% include footer.html %}
 
     {% if site.analytics_id %}
      <script>

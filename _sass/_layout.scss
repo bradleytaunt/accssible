@@ -3,50 +3,45 @@
 // Styles for managing the structural hierarchy of the site.
 
 .container {
-  display: flex;
+  display: block;
   height: 100%;
-  max-width: 1400px;
-  margin-left:  auto;
-  margin-right: auto;
+  margin: 0;
   position: relative;
-
-  @media (max-width: $large-breakpoint) {
-    flex-direction: column;
-  }
 }
 
 main, aside {
-  display: inline-block;
-  margin: 0;
-  vertical-align: top;
-
-  @media (max-width: $large-breakpoint) {
-    display: block;
-    width: 100% !important;
-  }
+  display: block;
+  margin: 0 auto;
 }
 
 main {
   background: white;
-  padding: 2rem 2rem 0 2rem;
-  width: calc(100% - 450px);
+  padding: 2rem;
+  width: 100%;
 
-  @media (max-width: $large-breakpoint) {
+  @media (max-width: $medium-breakpoint) {
     padding: 1rem;
   }
 }
 
 aside {
   background: $gray-1;
-  border: 1px solid $gray-1-1;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   height: 100%;
   padding: 2rem;
-  width: 450px;
+  width: 100%;
+
+  section {
+    margin: 0 auto;
+    max-width: 38rem;
+    text-align: center;
+
+    @media(max-width: $medium-breakpoint) {
+      text-align: left;
+    }
+  }
 
   @media(max-width: $large-breakpoint) {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
   h2 {
@@ -69,7 +64,12 @@ footer {
   padding: 2rem 0 1rem;
   position: relative;
   text-align: center;
+  width: 100%;
   z-index: 2;
+
+  @media(max-width: $medium-breakpoint) {
+    text-align: left;
+  }
 
   a {
     color: inherit;

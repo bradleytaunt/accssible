@@ -16,6 +16,4 @@ Some fun facts about the site include:
 * Coded with [VS Code](https://code.visualstudio.com/)
 * Design built off the awesome Jekyll base theme [Poole](http://getpoole.com)
 
-Have questions or suggestions? Feel free to hit me up on [Twitter](https://twitter.com/bradtaunt).
-
-Interested in some of my open source projects? Check out my [portfolio](https://bradleytaunt.com).
+Have questions or suggestions? Feel free to hit me up on [Twitter](https://twitter.com/bradtaunt). Interested in some of my open source projects? Check out my [portfolio](https://bradleytaunt.com).

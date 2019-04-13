@@ -1,5 +1,5 @@
 ---
-layout: default-home
+layout: default
 title: Home
 description: The personal blog of designer and developer Bradley Taunt
 ---
@@ -8,18 +8,23 @@ description: The personal blog of designer and developer Bradley Taunt
   {% for post in paginator.posts %}
     <article class="post" role="article">
       <div class="post-title">
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a></h2>
-        <span class="post-date">Posted on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></span>
-        <p>{{ post.summary }}</p>
-        <hr>
-        <p>
-          Tagged
-          {% for tag in post.tags %}
-            <a href="/tags/{{ tag }}/">{{ tag }}</a>
-          {% endfor %}
-        </p>
+        <span class="post-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b" }}</time>
+          <time class="date-day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d" }}</time>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
+        </span>
+        <div>
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a></h2>
+          <p>{{ post.summary }}</p>
+          <span class="tags">
+            Tagged
+            {% for tag in post.tags %}
+              <a href="/tags/{{ tag }}/">{{ tag }}</a>
+            {% endfor %}
+          </span>
+        </div>
       </div>
     </article>
   {% endfor %}

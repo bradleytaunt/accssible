@@ -9,7 +9,7 @@
   display: flex;
   font-size: 80%;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 2rem 0 4rem;
   overflow: hidden; // clearfix
   text-align: center;
   width: 100%;
@@ -39,6 +39,7 @@
 // Only provide a hover state for linked pagination items
 a.pagination-item,
 a.page-number {
+  border-radius: 0;
   color: $brand-color;
   text-decoration: none;
   transition: .3s ease all;
@@ -57,10 +58,6 @@ a.page-number {
 }
 
 @media (min-width: $large-breakpoint) {
-  .pagination {
-    margin: 3rem 0;
-  }
-
   .pagination-item {
     border-width: 1px;
   }

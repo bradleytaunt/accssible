@@ -11,11 +11,8 @@
 
 .page,
 .post {
-  max-width: 38em;
-
-  @media (max-width: $large-breakpoint) {
-    max-width: 100%;
-  }
+  margin: 0 auto;
+  max-width: 38rem;
 
   li + li {
     margin-top: .25rem;
@@ -27,8 +24,10 @@
 .post {
   margin-bottom: 2rem;
   padding-bottom: 2rem; 
-  hr {
-    margin-bottom: 1rem;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -63,14 +62,43 @@
 .post-title p { margin-bottom: 0; }
 
 .post-title {
-  display: block;
+  align-items: center;
+  display: flex;
+
+  @media(max-width:$medium-breakpoint) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 // Meta data line below post title
 .post-date {
-  display: inline-block;
   margin-bottom: 1rem;
+  opacity: 0.6;
+
+  @media(min-width: 751px) {
+    border-right: 1px solid $gray-2;
+    display: flex;
+    flex-direction: column;
+    color: $gray-2;
+    margin-bottom: 0;
+    margin-right: 2rem;
+    opacity: 1;
+    padding: 0 2rem 0 1rem;
+    text-align: center;
+
+    time.date-day {
+      font-size: 250%;
+      line-height: 1;
+    }
+  }
+}
+
+.tags {
   color: $gray-3;
+  display: block;
+  font-size: 90%;
+  margin-top: 0.5rem;
 }
 
 // Disqus Container

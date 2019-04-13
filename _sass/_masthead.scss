@@ -3,7 +3,8 @@
 // Super small header above the content for site name and short description.
 
 .masthead-container {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 38rem;
   width: 100%;
 
   hr {
@@ -12,7 +13,7 @@
 }
 
 .masthead {
-  background: url('public/writing-logo.png') no-repeat center left;
+  background: url('public/writing-logo.png') no-repeat left 20px;
   background-size: 50px;
   align-items: center;
   display: flex;
@@ -23,7 +24,8 @@
   position: relative;
 
   @media(max-width: $medium-breakpoint) {
-    background: none;
+    background-position: 10px 20px;
+    background-size: 40px;
     flex-wrap: wrap;
   }
 }
@@ -98,7 +100,7 @@ input#menu-toggle:checked ~ nav {
   position: relative;
 
   @media(max-width: $medium-breakpoint) {
-    padding-left: 0;
+    padding-left: 40px;
   }
 
   a {
@@ -112,9 +114,5 @@ input#menu-toggle:checked ~ nav {
     font-size: 75%;
     font-weight: 400;
     opacity: .6;
-
-    @media(max-width: $medium-breakpoint) {
-      display: none;
-    }
   }
 }
