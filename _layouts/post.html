@@ -1,12 +1,73 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<article class="post" role="article">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <p><small>Posted on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></small></p>
-  {{ content }}
-  <div class="disqus-container">
-    {% disqus %}
-  </div>
-</article>
+  {% include head-post.html %}
+
+  <body>
+
+    {% include masthead.html %}
+
+    <div class="container content">
+
+      <main id="main" role="main">
+        <article class="post" role="article">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <p><small>Posted on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></small></p>
+          {{ content }}
+          <div class="disqus-container">
+            {% disqus %}
+          </div>
+        </article>
+      </main>
+
+      <!-- pagination -->
+      {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+      {% if paginator.previous_page %}
+          <a class="pagination-item older" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% else %}
+          <span class="pagination-item older">&laquo; Prev</span>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+          <span class="page-number">{{ page }}</span>
+          {% elsif page == 1 %}
+          <a class="page-number" href="/">{{ page }}</a>
+          {% else %}
+          <a class="page-number" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+          <a class="pagination-item newer" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% else %}
+          <span class="pagination-item older">Next &raquo;</span>
+      {% endif %}
+      </div>
+      {% endif %}
+
+      <aside role="complementary">
+        <section role="region">
+          <h2>About This Site</h2>
+          <p>I'm <a href="https://bradleytaunt.com">Bradley Taunt</a>, a designer / developer hybrid and this is my technical blog. In this small corner of the internet I write about design, CSS, best accessibility practices, and web performance.</p>
+        </section>
+        {% include footer.html %}
+      </aside>
+
+    </div>
+
+    {% if site.analytics_id %}
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', '{{ site.analytics_id }}', 'auto');
+       ga('send', 'pageview');
+     </script>
+    {% endif %}
+
+    <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+  </body>
+</html>
