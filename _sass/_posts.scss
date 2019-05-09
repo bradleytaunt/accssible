@@ -52,7 +52,10 @@
 .page-title,
 .post-title,
 .post-title h2 a {
-  color: #303030;
+  color: $body-color;
+}
+.post-title h2 a:hover {
+  color: $brand-color;
 }
 .page-title,
 .post-title,
